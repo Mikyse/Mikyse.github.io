@@ -43,3 +43,22 @@ nav ul li a:hover {
     font-size: 18px;
     color: #666;
 }
+@keyframes computerAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .computer-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("computer-logo.png");
+    background-size: cover;
+    animation: computerAnimation 4s linear infinite;
+  }
